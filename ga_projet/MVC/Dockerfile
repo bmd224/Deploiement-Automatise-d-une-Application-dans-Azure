@@ -17,15 +17,15 @@ USER root
 RUN apt-get update && apt-get install -y iputils-ping
 
 # Pour le managed identity en Dev seulement.
-ENV AZURE_CLIENT_ID=${AZURE_CLIENT_SECRET}
+ENV AZURE_CLIENT_ID=${AZURE_CLIENT_ID}
 ENV AZURE_CLIENT_SECRET=${AZURE_CLIENT_SECRET}
-ENV AZURE_TENANT_ID=${AZURE_CLIENT_SECRET}
+ENV AZURE_TENANT_ID=${AZURE_TENANT_ID}
 
 # Pour les certificats SSL
 ENV ASPNETCORE_Kestrel__Certificates__Default__Path=/app/Cert/composecert.pfx
 ENV ASPNETCORE_Kestrel__Certificates__Default__Password=12345678
 
-# Pour forcer le redirect URL / Valider aussi le launchSetting.json pour le numéro du port ...
+# Pour forcer le redirect URL / Valider aussi le launchSetting.json pour le numÃ©ro du port ...
 ENV ASPNETCORE_URLS=http://+:8080;https://+:8081
 
 # This stage is used to build the service project
