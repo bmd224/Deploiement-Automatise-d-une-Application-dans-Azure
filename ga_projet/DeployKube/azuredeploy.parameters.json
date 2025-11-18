@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "clusterName": {
+      "value": "galiKube"
+    },
+    "location": {
+      "value": "eastus"
+    },
+    "dnsPrefix": {
+      "value": "galikube"
+    },
+    "osDiskSizeGB": {
+      "value": 0
+    },
+    "agentCount": {
+      "value": 3
+    },
+    "agentVMSize": {
+      "value": "standard_d2s_v3"
+    },
+    "linuxAdminUsername": {
+      "value": "kubeadmin"
+    },
+    "sshRSAPublicKey": {
+      "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDXFVWxhhbnEstgelXGKo/n5k1i0DxQtczaO+QoKIn5qN5ONHnUd2FwUDuZHH4rLL6jLiOFs7h89kTWDdogaPDkFqyvbwnlNOQLrdu8WTtsdtNEMww8h9VdE0LEU7OGBmU+5zo8iEVF7s1G56Sjh22dxSR17TQ0lItfNCBi+ggZ61IODhNSXnHGJwZvyevBrS2G8rakdZ00kTazOQYFBRO9SFjOZVTxiKmvDJS1UscXir6ttMP8lRfXYnNUjacUtV/nrY8zBxkTb1HwtfX0/uPuNXOrtUHdFfmYsmxBKVDGiGK5N61wJ8XSxwzPCive/Dgfp1XhMKtW/aTTTzOaYeRfvG2LvvNfix8fqASgdB6AwY/IacnBOoYANnp33JXNTYXmTlvLJR5PcNexL7rqYHJfulg0MJ8vcTqQwWzaQt4fP5li4OvKchE+lG4Ongr3EI3/p9DWscSeUBmuJJ9+E39kjAJglnjxCzn9UZge8fX6vecBnE1CKbt3zr2PUzoDj20= generated-by-azure"
+    }
+  }
+}

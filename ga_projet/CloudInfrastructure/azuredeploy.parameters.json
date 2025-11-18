@@ -1,0 +1,64 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "location": { "value": "eastus" },
+    "VaultName": { "value": "galiKeyVault" },
+    "AppConfigName": { "value": "galiAppConfiguration" },
+    "LogAnalyticsName": { "value": "LogAnalytics" },
+    "ApplicationInsightName": { "value": "ApplicationInsights" },
+    "ServiceBusName": { "value": "galiSb" },
+    "ServiceBusQueue1Name": { "value": "imageresizemessage" },
+    "ServiceBusQueue2Name": { "value": "contentsafetymessage" },
+    "NoSQLname": { "value": "galicosmos" },
+    "NoSQLdatabaseName": { "value": "ApplicationDB" },
+    "storageAccountName": { "value": "galiblobstore" },
+    "storageBlobContainerName1": { "value": "unvalidated" },
+    "storageBlobContainerName2": { "value": "validated" },
+    "storageBlobContainerName3": { "value": "synchro" },
+    "AzureAdClientId": { "value": "25c5f4cf-0897-442f-a215-f30193d1e87a" },
+    "AzureAdDomainName": { "value": "yomanunsixsixdem0180.onmicrosoft.com" },
+    "ContentSafetyname": { "value": "galiContentSafety" },
+    "resourceGroupName": { "value": "gali" },
+    "EventHubName": { "value": "galiEventHub" },
+    "EventHubHubName": { "value": "galievents" },
+    "EventHubConsumerGroupName": { "value": "consumer" },
+    "ContainerRegistryName": { "value": "galiRegistry" },
+
+    // Content Safety Stuff
+
+    "virtualNetworkType": {
+      "value": "None"
+    },
+    "vnet": {
+      "value": {}
+    },
+    "ipRules": {
+      "value": []
+    },
+    "identity": {
+      "value": {
+        "type": "SystemAssigned"
+      }
+    },
+    "privateEndpoints": {
+      "value": []
+    },
+    "privateDnsZone": {
+      "value": ""
+    },
+    "isCommitmentPlanForDisconnectedContainerEnabled": {
+      "value": false
+    },
+    "commitmentPlanForDisconnectedContainer": {
+      "value": {
+        "current": {
+          "count": 9
+        },
+        "hostingModel": "DisconnectedContainer",
+        "planType": "Lenovo",
+        "autoRenew": true
+      }
+    }
+  }
+}
